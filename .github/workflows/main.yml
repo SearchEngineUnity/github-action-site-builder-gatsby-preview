@@ -1,7 +1,7 @@
 name: 3200.PRO Refresh Gatsby Preview
 on:
   schedule:
-    - cron: "0 */8 * * *" # Visit https://crontab.guru/examples.html for cron scheduling examples
+    - cron: "0 */15 * * * *" # Visit https://crontab.guru/examples.html for cron scheduling examples
   workflow_dispatch:
 jobs:
   build:
