@@ -1,0 +1,13 @@
+name: 3200.PRO Refresh Gatsby Preview
+on:
+  schedule:
+    - cron: "0 */8 * * *" # Visit https://crontab.guru/examples.html for cron scheduling examples
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: muinmomin/webhook-action@v1.0.0
+        with:
+          url: ${{ secrets.WEBHOOK_URL }}
+          data: "{}"
